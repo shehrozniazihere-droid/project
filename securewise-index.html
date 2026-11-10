@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecureWise | Cybersecurity, Privacy & Internet Safety</title>
+<meta name="description" content="Explore practical cybersecurity guides, online privacy tips, VPN education, password protection, malware prevention and internet safety advice.">
+<meta name="keywords" content="cybersecurity, online privacy, VPN guide, antivirus protection, internet safety, password security">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#071426">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#071426;color:#edf4ff;line-height:1.8}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1150px;margin:auto}
+header{position:sticky;top:0;z-index:100;background:#071426;border-bottom:1px solid #20334b;padding:17px 0}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.logo{font-size:26px;font-weight:800;color:#45d6c5}
+.navlinks{display:flex;gap:24px;font-size:14px;color:#c5d1e2}
+.navlinks a:hover{color:#45d6c5}
+.hero{padding:100px 0 85px;text-align:center;background:radial-gradient(ellipse at top,#14364c 0%,#071426 65%)}
+.tag{display:inline-block;padding:7px 17px;border-radius:30px;background:#123c49;color:#57e4d1;font-size:12px;letter-spacing:1px;margin-bottom:24px}
+h1{font-size:clamp(38px,6vw,65px);line-height:1.16;max-width:900px;margin:0 auto 25px}
+h1 span{color:#45d6c5}
+.hero p{max-width:750px;margin:auto;color:#b6c5d8;font-size:17px}
+.btn{display:inline-block;background:#45d6c5;color:#061827;padding:14px 27px;border-radius:8px;font-weight:bold;margin-top:28px;transition:.3s}
+.btn:hover{background:#70eadc;transform:translateY(-2px)}
+.section{padding:75px 0}
+.section-title{text-align:center;font-size:34px;margin-bottom:12px}
+.subtitle{text-align:center;color:#a9b9cc;max-width:750px;margin:0 auto 42px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#102239;border:1px solid #233b56;padding:27px;border-radius:15px;transition:.3s}
+.card:hover{transform:translateY(-5px);border-color:#45d6c5}
+.emoji{font-size:34px;margin-bottom:15px}
+.card h3{font-size:20px;margin-bottom:12px}
+.card p{color:#b6c5d8;font-size:14px}
+.card a{display:inline-block;color:#45d6c5;margin-top:16px;font-size:14px;font-weight:bold}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.intro h2{font-size:32px;line-height:1.3;margin-bottom:20px}
+.intro p{color:#b6c5d8;margin-bottom:15px}
+.visual{background:linear-gradient(145deg,#123d4b,#102239);border:1px solid #31506a;border-radius:18px;padding:45px;text-align:center}
+.visual .shield{font-size:100px}
+.visual h3{font-size:23px;color:#57e4d1}
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.guide-item{background:#102239;border-radius:13px;padding:27px;border:1px solid #233b56;border-left:4px solid #45d6c5}
+.guide-item h3{font-size:20px;margin-bottom:12px}
+.guide-item p{color:#b6c5d8;font-size:14px}
+.feature-list{list-style:none;margin-top:20px}
+.feature-list li{padding:9px 0;color:#c6d5e5;border-bottom:1px solid #263c55}
+.feature-list li:before{content:"✓";color:#45d6c5;font-weight:bold;margin-right:12px}
+.steps{counter-reset:step;max-width:850px;margin:auto}
+.step{padding:20px 0 20px 65px;position:relative;border-bottom:1px solid #263c55}
+.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:20px;background:#164c50;color:#57e4d1;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:bold}
+.step h3{margin-bottom:5px}
+.step p{color:#b6c5d8;font-size:14px}
+.info-box{background:#102239;border:1px solid #29445e;border-radius:14px;padding:30px;margin-top:25px}
+.info-box h3{margin-bottom:12px;color:#57e4d1}
+.info-box p{color:#b6c5d8;font-size:14px}
+.faq{max-width:850px;margin:auto}
+.faq-item{background:#102239;border:1px solid #263c55;padding:23px;border-radius:12px;margin-bottom:15px}
+.faq-item h3{font-size:17px;margin-bottom:9px}
+.faq-item p{font-size:14px;color:#b6c5d8}
+.cta{background:linear-gradient(120deg,#123d4b,#102239);padding:65px 30px;text-align:center;border:1px solid #31506a;border-radius:18px}
+.cta h2{font-size:32px}
+.cta p{color:#b6c5d8;max-width:700px;margin:15px auto}
+footer{border-top:1px solid #20334b;padding:45px 0;margin-top:40px}
+.footerlinks{display:flex;gap:23px;flex-wrap:wrap;justify-content:center;margin:20px 0}
+.footerlinks a{font-size:14px;color:#b6c5d8}
+.footerlinks a:hover{color:#45d6c5}
+footer p{text-align:center;color:#91a4b9;font-size:13px}
+@media(max-width:750px){.grid{grid-template-columns:1fr}.guide-grid{grid-template-columns:1fr}.intro{grid-template-columns:1fr}.navlinks{gap:11px;font-size:12px}.logo{font-size:22px}.hero{padding:70px 0 60px}.section{padding:50px 0}.section-title{font-size:28px}.visual{padding:30px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="logo" href="#">SecureWise.</a>
+<nav class="navlinks">
+<a href="#guides">Guides</a><a href="#privacy">Privacy</a><a href="#security">Security</a><a href="#faq">FAQs</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero"><div class="container">
+<div class="tag">YOUR DIGITAL SAFETY STARTS HERE</div>
+<h1>Protect Your Digital World With <span>Smarter Security</span></h1>
+<p>The digital world offers endless opportunities, but it also brings new security challenges. Learn how to protect your personal data, secure your accounts and browse the internet with confidence.</p>
+<a href="#guides" class="btn">Explore Our Guides →</a>
+</div></section>
+<section class="section container">
+<div class="intro">
+<div>
+<h2>Understanding Cybersecurity in Everyday Life</h2>
+<p>Cybersecurity is the practice of protecting computers, mobile devices, networks and personal information from digital threats. It plays an important role in modern life because people use the internet for banking, communication, education and work.</p>
+<p>From suspicious emails to stolen passwords, online threats can affect anyone. Understanding common risks is the first step toward building safer digital habits.</p>
+<p>SecureWise makes cybersecurity easier to understand through practical educational resources and straightforward explanations.</p>
+<a href="#security" class="btn">Learn About Security</a>
+</div>
+<div class="visual"><div class="shield">🛡️</div><h3>Your Digital Protection Matters</h3><p>Knowledge. Awareness. Protection.</p></div>
+</div>
+</section>
+<section class="section container" id="guides">
+<h2 class="section-title">Explore Our Cybersecurity Guides</h2>
+<p class="subtitle">Discover useful information about digital security, privacy, online threats and the tools people use to protect themselves.</p>
+<div class="grid">
+<div class="card"><div class="emoji">🔐</div><h3>Password Security</h3><p>Learn how to create strong passwords, understand password managers and secure important online accounts against unauthorized access.</p><a href="#passwords">Explore Guide →</a></div>
+<div class="card"><div class="emoji">🛡️</div><h3>Antivirus & Malware</h3><p>Understand computer viruses, ransomware, spyware and the role of antivirus software in identifying malicious programs.</p><a href="#malware">Explore Guide →</a></div>
+<div class="card"><div class="emoji">🌐</div><h3>Online Privacy</h3><p>Discover browser privacy settings, website tracking, cookies and ways to manage the information shared online.</p><a href="#privacy">Explore Guide →</a></div>
+<div class="card"><div class="emoji">🔎</div><h3>Phishing Awareness</h3><p>Recognize suspicious emails, fake websites, fraudulent messages and common online scams before sharing information.</p><a href="#phishing">Explore Guide →</a></div>
+<div class="card"><div class="emoji">📶</div><h3>Wi-Fi Network Safety</h3><p>Learn about router security, public Wi-Fi risks, network passwords and safer ways to connect your devices.</p><a href="#wifi">Explore Guide →</a></div>
+<div class="card"><div class="emoji">💻</div><h3>Device Protection</h3><p>Understand software updates, device permissions, data backups and essential security settings for computers and smartphones.</p><a href="#devices">Explore Guide →</a></div>
+</div>
+</section>
+<section class="section container" id="passwords">
+<h2 class="section-title">Complete Guide to Password Security</h2>
+<p class="subtitle">Your password is often the first layer of protection between your personal information and unauthorized access.</p>
+<div class="guide-grid">
+<div class="guide-item"><h3>Why Strong Passwords Matter</h3><p>Weak or reused passwords can make multiple accounts vulnerable if one website experiences a data breach. Strong, unique passwords reduce the risk of unauthorized account access.</p></div>
+<div class="guide-item"><h3>Use a Password Manager</h3><p>Password managers can generate and securely store unique passwords. They also make it easier to avoid reusing the same credentials across multiple services.</p></div>
+<div class="guide-item"><h3>Enable Multi-Factor Authentication</h3><p>Multi-factor authentication adds another verification step beyond your password. Depending on the service, this may involve an authenticator app or security key.</p></div>
+<div class="guide-item"><h3>Check for Suspicious Activity</h3><p>Review account sign-in notifications and security settings. Change compromised passwords immediately and sign out unknown devices when the service allows it.</p></div>
+</div>
+</section>
+<section class="section container" id="privacy">
+<h2 class="section-title">Online Privacy and VPN Education</h2>
+<p class="subtitle">Learn how websites, applications and internet services handle personal information.</p>
+<div class="guide-grid">
+<div class="guide-item"><h3>What Is a VPN?</h3><p>A Virtual Private Network creates an encrypted connection between your device and a VPN server. It can help protect data on certain network connections and change the IP address visible to websites.</p></div>
+<div class="guide-item"><h3>Understand Browser Tracking</h3><p>Websites may use cookies, advertising technologies and other tracking methods to understand browsing activity. Review browser privacy settings and manage permissions.</p></div>
+<div class="guide-item"><h3>Secure Your Personal Information</h3><p>Avoid sharing sensitive information unnecessarily. Use trusted websites for financial activities and review the privacy permissions of installed applications.</p></div>
+<div class="guide-item"><h3>Use Secure Connections</h3><p>Look for HTTPS when accessing websites, especially before entering passwords or payment information. Remember that HTTPS alone does not prove a website is trustworthy.</p></div>
+</div>
+</section>
+<section class="section container" id="malware">
+<h2 class="section-title">Understanding Malware and Antivirus Protection</h2>
+<p class="subtitle">Digital threats can affect computers, smartphones and business networks in different ways.</p>
+<div class="info-box"><h3>What Is Malware?</h3><p>Malware is software designed to perform harmful or unauthorized activities on a device or network. It includes viruses, spyware, ransomware, trojans and other malicious programs.</p></div>
+<div class="guide-grid" style="margin-top:25px">
+<div class="guide-item"><h3>Computer Viruses</h3><p>Some viruses attach themselves to files or programs and may spread when infected files are executed or shared.</p></div>
+<div class="guide-item"><h3>Ransomware</h3><p>Ransomware can encrypt files or disrupt access to systems and demand payment. Regular backups and security updates help reduce the impact of these attacks.</p></div>
+<div class="guide-item"><h3>Spyware</h3><p>Spyware can collect information about a user's activity without appropriate permission. Download software only from trusted sources.</p></div>
+<div class="guide-item"><h3>Antivirus Software</h3><p>Security software can help identify, block and remove many known threats. Keep protection tools updated and review their security settings regularly.</p></div>
+</div>
+</section>
+<section class="section container" id="phishing">
+<h2 class="section-title">How to Identify Phishing and Online Scams</h2>
+<p class="subtitle">Fraudulent messages often imitate banks, delivery companies, online services and other trusted organizations.</p>
+<div class="info-box"><h3>Common Warning Signs</h3>
+<ul class="feature-list">
+<li>Unexpected messages asking for passwords or financial details.</li>
+<li>Links that lead to unfamiliar or misspelled website addresses.</li>
+<li>Urgent threats claiming your account will be closed.</li>
+<li>Unexpected attachments from unknown senders.</li>
+<li>Payment requests that cannot be independently verified.</li>
+<li>Offers that appear too good to be true.</li>
+</ul></div>
+<p style="color:#b6c5d8;margin-top:25px">If a message looks suspicious, avoid clicking its links. Visit the organization's official website directly or contact its verified support channel.</p>
+</section>
+<section class="section container" id="wifi">
+<h2 class="section-title">Wi-Fi and Network Security</h2>
+<p class="subtitle">Your home network connects many important devices. Protecting it is an important part of digital safety.</p>
+<div class="guide-grid">
+<div class="guide-item"><h3>Secure Your Router</h3><p>Change default administrator credentials and use strong Wi-Fi passwords. Keep router firmware updated whenever security updates are available.</p></div>
+<div class="guide-item"><h3>Be Careful With Public Wi-Fi</h3><p>Avoid sensitive transactions on untrusted networks. Use HTTPS websites, keep your device updated and disable automatic connections to unknown Wi-Fi networks.</p></div>
+</div>
+</section>
+<section class="section container" id="devices">
+<h2 class="section-title">Protect Your Computers and Smartphones</h2>
+<p class="subtitle">A few consistent habits can improve the security of the devices you use every day.</p>
+<div class="info-box"><ul class="feature-list">
+<li>Install operating system and application updates.</li>
+<li>Use a secure screen lock or biometric authentication.</li>
+<li>Download applications from trusted official stores.</li>
+<li>Review application permissions regularly.</li>
+<li>Enable automatic backups for important information.</li>
+<li>Remove applications you no longer use.</li>
+<li>Keep device recovery options up to date.</li>
+<li>Do not connect unknown USB devices to your computer.</li>
+</ul></div>
+</section>
+<section class="section container">
+<h2 class="section-title">Build Your Personal Digital Safety Routine</h2>
+<p class="subtitle">Start with these practical steps to make online security part of your everyday life.</p>
+<div class="steps">
+<div class="step"><h3>Update Your Devices</h3><p>Install available security updates for your phone, computer and applications.</p></div>
+<div class="step"><h3>Enable Two-Factor Authentication</h3><p>Add an additional verification method to important online accounts.</p></div>
+<div class="step"><h3>Review Account Activity</h3><p>Check recent sign-ins and remove devices you no longer recognize.</p></div>
+<div class="step"><h3>Back Up Important Files</h3><p>Maintain secure backups of important personal and professional documents.</p></div>
+<div class="step"><h3>Learn About New Threats</h3><p>Stay informed about emerging scams, security risks and software updates.</p></div>
+</div>
+</section>
+<section class="section container" id="faq">
+<h2 class="section-title">Frequently Asked Questions</h2>
+<p class="subtitle">Answers to common questions about cybersecurity and online privacy.</p>
+<div class="faq">
+<div class="faq-item"><h3>1. What is cybersecurity?</h3><p>Cybersecurity is the practice of protecting digital devices, networks, applications and information from unauthorized access, attacks and damage.</p></div>
+<div class="faq-item"><h3>2. Why is online privacy important?</h3><p>Online privacy helps people understand and control how their personal information is collected, stored and shared by websites and applications.</p></div>
+<div class="faq-item"><h3>3. Can antivirus software protect against every threat?</h3><p>No. Antivirus tools can detect and block many threats, but no single security solution guarantees complete protection. Safe browsing habits and regular updates are also important.</p></div>
+<div class="faq-item"><h3>4. Is a VPN necessary for everyone?</h3><p>Not necessarily. A VPN can be useful in certain situations, but it does not replace secure passwords, device updates or careful online behavior.</p></div>
+<div class="faq-item"><h3>5. How can I recognize a fake website?</h3><p>Check the domain carefully, look for unexpected spelling changes and avoid suspicious links. Do not rely only on the website's appearance or HTTPS connection.</p></div>
+<div class="faq-item"><h3>6. How often should I update my devices?</h3><p>Install security updates when they become available. Enable automatic updates where practical and supported.</p></div>
+</div>
+</section>
+<section class="section container" id="about">
+<div class="cta">
+<h2>Make Your Online Safety a Priority</h2>
+<p>Good cybersecurity starts with knowledge, awareness and consistent habits. Explore our educational resources and make smarter decisions in the digital world.</p>
+<a href="#guides" class="btn">Start Learning Today →</a>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<a class="logo" href="#" style="display:block;text-align:center">SecureWise.</a>
+<div class="footerlinks">
+<a href="#about">About</a><a href="privacy.html">Privacy Policy</a><a href="contact.html">Contact</a><a href="disclaimer.html">Disclaimer</a>
+</div>
+<p>SecureWise provides educational information about cybersecurity and online privacy. Content is not a substitute for professional security advice.</p>
+<p style="margin-top:12px">© 2026 SecureWise. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
